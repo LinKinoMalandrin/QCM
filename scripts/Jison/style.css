@@ -1,0 +1,88 @@
+.error-field.hidden{
+	display:none;
+}
+input {
+	border:2px solid transparent;
+	border-radius:3px;
+	padding:5px;
+	outline:none;
+	tap-highlight-color:transparent;
+	box-shadow:none;
+	background-color:lightgrey;
+	transition:0.2s border-color;
+}
+
+button {
+	padding:5px;
+	border-radius:3px;
+	color:white;
+	background-color:darkblue;
+	border:none;
+	cursor:pointer;
+}
+
+button[disabled] {
+	opacity:0.7;
+}
+
+input.error {
+	border-color:red;
+	display:inline-block;
+}
+
+form {
+	display:flex;
+	flex-direction:column;
+	width:200px;
+}
+
+.graphics-dot {
+	position:absolute;
+	top:0;
+	left:0;
+}
+.graphics-line {
+	position:absolute;
+	top:0;
+	left:0;
+	transform-origin:0 0;
+}
+
+.dot-container {
+	position:relative;
+}
+
+.scroll-level {
+	transition:0.1s transform;
+	transform-origin:0 0;
+	border-radius:10px;
+}
+
+.scroll-container {
+	padding:8px;
+	border-radius:30px;
+	height:30px;
+}
+
+.radied {
+	border-radius:50px;
+}
+* {
+	font-family:'Courier New', Courier, monospace;
+	font-weight:700;
+}
+
+.level {
+	width:50px;
+	height:50px;
+	border-radius:50px;
+	background:black;
+	display:flex;
+	justify-content:center;
+	overflow:hidden;
+}
+
+.mark {
+	height:20px;
+	width:5px;
+}
